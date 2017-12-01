@@ -17,7 +17,7 @@ app.get("/:date", function(req, res) {
     var unixConv = new Date(req.params.date);
     res.status(200).json({"unix": parseInt(unixConv.getTime() / 1000), "natural": req.params.date});
   } else {
-    res.status(400).end();
+    res.status(400).json({"unix": null, "natural": null});
   }
 });
 
