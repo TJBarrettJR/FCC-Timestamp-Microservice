@@ -1,27 +1,42 @@
-Welcome to the Glitch BETA
-=========================
-
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
 
 
-Your Project
-------------
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Timestamp Microservice API
+      </h1>
+    </header>
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+    <main>
+      <h3 class="bold">Example usage:</h3>
+      <p>
+        https://dour-handsaw.glitch.me/December%2015,%202015
+      </p>
+      <p>
+        https://dour-handsaw.glitch.me/1450137600
+      </p>
+      <h3 class="bold">Example Output:</h3>
+      <p>
+        {"unix": 1450137600, "natural": "December 15, 2015"}
+      </p>
+    </main>
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
 
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
+  </body>
+</html>
